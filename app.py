@@ -16,12 +16,10 @@ if "role" not in st.session_state:
             if owner_pw == st.secrets["credentials"]["owner_password"]:
                 st.session_state["role"] = "Owner"
                 st.success("Owner mode activated.")
-                st.experimental_rerun()
             else:
                 st.error("Incorrect Owner Password.")
     else:
         st.session_state["role"] = "Normal User"
-        st.experimental_rerun()
 
 # --- Site Management in Sidebar ---
 st.sidebar.header("WordPress Site Management")
