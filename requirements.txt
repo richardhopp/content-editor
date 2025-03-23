@@ -1,0 +1,10 @@
+streamlit
+openai
+requests
+beautifulsoup4
+cryptography
+pandas
+PyMuPDF
+python-docx
+Pillow
+chardet
