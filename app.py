@@ -48,7 +48,6 @@ with st.sidebar.expander("Add a New Site"):
                 sites.append(new_site)
                 save_sites(sites)
                 st.success("Site added successfully!")
-                st.experimental_rerun()
             else:
                 st.error("Failed to connect. Check your credentials and site URL.")
         else:
